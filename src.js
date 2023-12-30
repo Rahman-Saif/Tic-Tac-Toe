@@ -1,4 +1,4 @@
-console.log("welcome to Tic Tac Toe");
+console.log("welcome to Tic Tac Toe babyyy! lets playyy!!");
 
 let board=[
     [' ',' ',' '],
