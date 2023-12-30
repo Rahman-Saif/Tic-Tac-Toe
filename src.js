@@ -14,6 +14,23 @@ function resetBoard(){
     }
 }
 printBoard();
+
+while(winner==' ' && checkFreeSpaces()!=0){
+    printBoard();
+    
+    playerMove();
+    winner=checkWinner();
+    if(winner !=' '|| checkFreeSpaces()==0){
+        break;
+    }
+    
+    computerMove();
+    winner=checkWinner();
+    if(winner !=' '|| checkFreeSpaces()==0){
+        break;
+    }
+}
+
 function printBoard(){
     console.log("  |   |  ");
     console.log("-------------");
